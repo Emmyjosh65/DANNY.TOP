@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DANNY.TOP — Lead Full Stack Developer & Bot Architect. WhatsApp automation, web platforms, cloud systems." />
+  <title>DANNY.TOP</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══ SUPPORT / DONATE PANEL ══ -->
+  <section class="support-bar reveal" id="support">
+    <div class="container support-inner">
+      <div class="support-text">
+        <span class="bot-badge">🤖 DANNY BOT ENGINE v6.2</span>
+        <p>Support my work — web platforms, games & automation systems. 🚀</p>
+      </div>
+      <div class="support-actions">
+        <div class="usdt-box">
+          <span class="pay-label">💳 Opay:</span>
+          <code id="pay-address">8062285862</code>
+          <button class="btn btn-ghost" id="copy-pay">Copy</button>
+        </div>
+        <a class="btn btn-ghost" href="https://wa.me/2348062285862?text=Hi%20Danny!%20I%20want%20to%20support%20your%20projects!" target="_blank" rel="noopener">WhatsApp Support</a>
+        <a class="btn btn-ghost" href="https://t.me/crushondanny" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn btn-ghost" href="https://whatsapp.com/channel/0029VabYlvq6xCSKAxKpKB1m" target="_blank" rel="noopener">📢 ZEUS TIER'S Channel</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ NAVBAR ══ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">DANNY<span>.TOP</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#terminal">CLI</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-support" href="#support">Support ☕</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="status-line">
+          <span class="dot"></span> Available for Hire | <span id="clock">--:--:--</span>
+        </div>
+        <h1>Hello, I'm <span class="gradient-text">Danny</span></h1>
+        <h2 class="typed-line">I engineer <span id="typed-text"></span><span class="caret">|</span></h2>
+        <p class="hero-desc">Lead Full Stack Developer & Bot Architect — specializing in high-performance automation, scalable microservices, scripting, cloud deployments, and ultra-responsive web platforms.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#terminal" class="btn btn-ghost">Open CLI</a>
+          <a href="#support" class="btn btn-support">☕ Donate</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="cloud" id="tech-cloud" aria-label="Drag to rotate tech cloud">
+          <p class="cloud-hint">Drag to rotate</p>
+          <div class="cloud-scene" id="cloud-scene">
+            <span class="tag t1">React</span><span class="tag t2">Node.js</span>
+            <span class="tag t3">Python</span><span class="tag t4">Golang</span>
+            <span class="tag t5">Docker</span><span class="tag t6">MongoDB</span>
+            <span class="tag t7">Baileys</span><span class="tag t8">FastAPI</span>
+            <span class="tag t9">Next.js</span><span class="tag t10">Redis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head"><span class="kicker">Biography</span><h2>Engineering Digital Perfection</h2></div>
+      <div class="about-grid">
+        <img class="about-photo" src="assets/profile.png" alt="Danny" />
+        <div>
+          <p>I am a <strong>Lead Full Stack Developer</strong> and <strong>Bot Architect</strong> based in the <strong>United Kingdom</strong>. I specialize in building high-speed <strong>Automation Systems</strong>, <strong>Automation Scripts</strong>, and immersive web applications using React, Node.js, and Golang.</p>
+          <p>With over <strong>5</strong> years of practical experience, I have developed <strong>4+</strong> flagship platforms — from the Zeus Mario Game to the ZEUS TIER'S ecosystem — serving clients across the globe.</p>
+          <div class="stats">
+            <div class="stat"><span class="counter" data-target="5">0</span><p>Years Exp</p></div>
+            <div class="stat"><span class="counter" data-target="4">0</span><p>Projects</p></div>
+            <div class="stat"><span class="counter" data-target="25">0</span><p>Clients</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SERVICES ══ -->
+  <section class="section alt" id="services">
+    <div class="container">
+      <div class="section-head"><span class="kicker">Capabilities</span><h2>My Services</h2></div>
+      <div class="cards-grid">
+        <article class="card"><h3>Web Systems</h3><p>Responsive, lightning-fast, and SEO-optimized web platforms using React, Next.js & Tailwind CSS.</p></article>
+        <article class="card"><h3>Mobile Apps</h3><p>Cross-platform mobile applications for Android & iOS built with React Native and Flutter.</p></article>
+        <article class="card"><h3>WhatsApp Bots</h3><p>Custom high-capacity automation bots for group management, auto-replies, and AI integration.</p></article>
+        <article class="card"><h3>Backend & Cloud</h3><p>Secure REST APIs and microservice architectures built with Node.js, Python, Golang, and Docker VPS.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ══ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head"><span class="kicker">Proficiency</span><h2>Technical Stack</h2></div>
+      <div class="skills-grid">
+        <div class="skills-col">
+          <h3>Frontend & Bots</h3>
+          <div class="skill"><div class="skill-top"><span>Node.js / JavaScript (ES6+)</span><span class="pct" data-pct="98">0%</span></div><div class="bar"><div class="fill" data-w="98"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>WhatsApp Automation (Baileys API)</span><span class="pct" data-pct="100">0%</span></div><div class="bar"><div class="fill" data-w="100"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>React.js & Tailwind CSS</span><span class="pct" data-pct="92">0%</span></div><div class="bar"><div class="fill" data-w="92"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>React Native / Mobile UI</span><span class="pct" data-pct="85">0%</span></div><div class="bar"><div class="fill" data-w="85"></div></div></div>
+        </div>
+        <div class="skills-col">
+          <h3>Backend & Cloud</h3>
+          <div class="skill"><div class="skill-top"><span>Python (Automation, FastAPI)</span><span class="pct" data-pct="92">0%</span></div><div class="bar"><div class="fill" data-w="92"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>MongoDB / PostgreSQL / SQL</span><span class="pct" data-pct="88">0%</span></div><div class="bar"><div class="fill" data-w="88"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>Golang (Go Routines)</span><span class="pct" data-pct="82">0%</span></div><div class="bar"><div class="fill" data-w="82"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>Docker & VPS Cloud Deployment</span><span class="pct" data-pct="80">0%</span></div><div class="bar"><div class="fill" data-w="80"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>REST APIs & WebSockets</span><span class="pct" data-pct="95">0%</span></div><div class="bar"><div class="fill" data-w="95"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TERMINAL CLI ══ -->
+  <section class="section alt" id="terminal">
+    <div class="container">
+      <div class="section-head"><span class="kicker">Command Shell</span><h2>Developer Terminal CLI</h2></div>
+      <div class="terminal" id="terminal-box">
+        <div class="term-bar"><span></span><span></span><span></span> danny@dev-kernel: ~</div>
+        <div class="term-body" id="term-body">
+          <p class="term-line">danny@dev-kernel:~$ <span class="term-ok">ONLINE</span></p>
+          <p class="term-line">Quick Run: <span class="quick" data-cmd="help">help</span> <span class="quick" data-cmd="whoami">whoami</span> <span class="quick" data-cmd="skills">skills</span> <span class="quick" data-cmd="projects">projects</span> <span class="quick" data-cmd="contact">contact</span> <span class="quick" data-cmd="clear">clear</span></p>
+          <p class="term-line">Welcome to Danny's Interactive Shell. Type 'help' to list commands.</p>
+        </div>
+        <div class="term-input-row">
+          <span class="term-prompt">danny@kernel:~$</span>
+          <input id="term-input" type="text" autocomplete="off" spellcheck="false" placeholder="type a command…" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ JOURNEY ══ -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-head"><span class="kicker">Milestones</span><h2>My Journey</h2></div>
+      <div class="timeline">
+        <div class="milestone">
+          <h3>Lead Full Stack Developer & Bot Architect</h3>
+          <p class="m-date">ZEUS TIER'S Ecosystem | 2021 - Present</p>
+          <p>Architecting the ZEUS TIER'S platform suite — Zeus Mario, Zeus Sensi, Media Boost & Zeus IQ. Optimizing Node.js, Python & Go routines for 99.9% uptime.</p>
+        </div>
+        <div class="milestone">
+          <h3>Full Stack Software Freelancer</h3>
+          <p class="m-date">Global Clients & Businesses | 2019 - 2021</p>
+          <p>Delivered web platforms, games and automation tooling for international clients — from concept to cloud deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section class="section alt" id="projects">
+    <div class="container">
+      <div class="section-head"><span class="kicker">Portfolio</span><h2>Featured Projects</h2></div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Platforms</button>
+        <button class="filter-btn" data-filter="game">Games</button>
+        <button class="filter-btn" data-filter="cloud">Cloud & Mobile</button>
+      </div>
+      <div class="projects-grid">
+        <article class="project" data-cat="game web">
+          <div class="tags"><span>HTML5</span><span>Game</span><span>Node.js</span><span>Express</span></div>
+          <h3>Zeus Mario Game</h3>
+          <p>Playable Mario-style game engine, live on a free cloud server.</p>
+          <a class="view-link" href="https://zeus-mario-game.onrender.com/" target="_blank" rel="noopener">Play Now →</a>
+        </article>
+        <article class="project" data-cat="web">
+          <div class="tags"><span>Premium</span><span>Web App</span><span>Express</span><span>Access Control</span></div>
+          <h3>Zeus Sensi Premium</h3>
+          <p>Premium subscription web platform with secure member access.</p>
+          <a class="view-link" href="https://zeus-sensi.onrender.com/premium.html" target="_blank" rel="noopener">View Details →</a>
+        </article>
+        <article class="project" data-cat="cloud web">
+          <div class="tags"><span>Media</span><span>Cloud</span><span>API</span><span>Automation</span></div>
+          <h3>Media Boost</h3>
+          <p>Cloud-powered media boosting platform with automation tooling.</p>
+          <a class="view-link" href="https://media-boost.onrender.com/" target="_blank" rel="noopener">View Details →</a>
+        </article>
+        <article class="project" data-cat="cloud web">
+          <div class="tags"><span>IQ Tools</span><span>Cloud</span><span>REST API</span><span>Dashboard</span></div>
+          <h3>Zeus IQ</h3>
+          <p>Zeus IQ — cloud-based intelligent toolkit with a live dashboard.</p>
+          <a class="view-link" href="https://zeus-iq.onrender.com/" target="_blank" rel="noopener">View Details →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head"><span class="kicker">Get in touch</span><h2>Let's Collaborate</h2></div>
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form">
+          <input type="text" name="name" placeholder="YOUR NAME" required />
+          <input type="email" name="email" placeholder="EMAIL ADDRESS" required />
+          <textarea name="message" rows="5" placeholder="PROJECT DETAILS" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+        <aside class="contact-side">
+          <a class="email-link" href="mailto:gd0560045@gmail.com">gd0560045@gmail.com</a>
+          <div class="socials">
+            <a href="https://wa.me/2348062285862" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://www.tiktok.com/@justdanny08" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://t.me/crushondanny" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://whatsapp.com/channel/0029VabYlvq6xCSKAxKpKB1m" target="_blank" rel="noopener">ZEUS TIER'S Channel</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Danny. Architected with Code & Passion.</p>
+  </footer>
+
+  <!-- ══ FLOATING WHATSAPP ══ -->
+  <a class="wa-float" href="https://wa.me/2348062285862" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.87-9.9 9.87zm8.42-18.3A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.47-8.41z"/></svg>
+  </a>
+
+  <!-- ══ BYTE BOT WIDGET ══ -->
+  <button class="bot-toggle" id="bot-toggle" aria-label="Chat with Byte">🤖</button>
+  <div class="bot-window" id="bot-window">
+    <div class="bot-head"><span>🤖 BYTE — Code & Content Protected 🔒</span><button id="bot-close">✕</button></div>
+    <div class="bot-body" id="bot-body">
+      <p class="bot-msg bot-in">Beep Boop! Hi! I'm Byte! 🎉 I guard this site. Ask me: <b>services</b>, <b>projects</b>, <b>contact</b>, <b>donate</b>.</p>
+    </div>
+    <div class="bot-input-row"><input id="bot-input" type="text" placeholder="Talk to Byte…" /></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
